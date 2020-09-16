@@ -134,16 +134,15 @@ class Task:
         return currenttime - self.timestamp
 
 def newPrintTask():
-    num = random.randrange(1,181)
-    if num == 180:
+    num = random.randrange(1,61)
+    if num == 60:
         return True
     else:
         return False
 
 
-
 for i in range(10):
-    pagesPerMinute = 10
+    pagesPerMinute = 50
     printer = Printer(pagesPerMinute)
     printQueue = Queue()
     # 计算平均等待时间，所以需要将所有的等待时间进行存储
